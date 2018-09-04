@@ -1,9 +1,7 @@
 <template>
     <div>
 
-
       <container>
-
 
       <row>
         <column md="3" class="text-center home-feature-box">
@@ -47,10 +45,49 @@
           </a>
         </column>
       </row>
-      <ul class="py-2 text-center">
-        <li><btn tag="a" size="sm" color="default" href="#/components/grid" target="_blank">Grid</btn></li>
-        <li><btn tag="a" size="sm" color="default" href="#/components/liveDemo" target="_blank">Live Demo</btn></li>
-      </ul>
+
+      </container>
+      <row>
+        <column md="6" ><img style="max-width: 100%;" src="../assets/left.png"/></column>
+        <column md="6"  class="text-Keep">
+          <img src="../assets/watch.png" height="40" width="40"/>
+          <p class="bolder">
+           Keep Tracking Your Work Progress
+          </p>
+          <p >
+            Donec tempore finibus ante ac luctus. Fusce facilisis nisi.vel odio tincidunt maximus. pellentesque tempus gravida viverra Pellentesque dui vehicula.
+          </p>
+          <button class="Learn-Button">Learn More</button>
+        </column>
+
+      </row>
+      <row>
+        <column md="6"  class="text-Keep ">
+          <div class="keep-center">
+          <img src="../assets/list.png" height="40" width="40"/>
+          <p class="bolder">
+            Analyse Your Expertise & Capabilities
+          </p>
+          <p >
+            Donec tempore finibus ante ac luctus. Fusce facilisis nisi.vel odio tincidunt maximus. pellentesque tempus gravida viverra Pellentesque dui vehicula.
+          </p>
+          <button class="Learn-Button">Learn More</button>
+          </div>
+        </column>
+        <column md="6" ><img style="max-width: 100%;" src="../assets/right.png"/></column>
+
+
+      </row>
+      <container>
+        <row>
+          <column md="10" class="mx-auto mt-4 text-center">
+            <h2 class="pt-4 bolder">
+              How It Works
+            </h2>
+            <p>Donec tempore finibus ante ac luctus. Fusce facilisis nisi.vel odio tincid-</p>
+            <p>unt maximus. pellentesque tempus gravida viverra.</p>
+          </column>
+        </row>
       </container>
     </div>
 </template>
@@ -122,5 +159,29 @@ a {
     color: black;
     margin: 10px;
   }
+.text-Keep{
+  margin: auto;
+}
+.text-Keep p {
+
+  width: 215px;
+
+}
+.text-Keep .bolder{
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.Learn-Button{
+  color: #fff;
+  -webkit-border-radius: 10em;
+  border-radius: 10em;
+  background-color: #3023ae;
+  padding: 12px;
+  border: 0;
+}
+.keep-center{
+  padding: 10% 20% 10% 30%;
+}
 
 </style>

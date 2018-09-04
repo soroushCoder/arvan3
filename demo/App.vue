@@ -21,7 +21,7 @@
             Manage All of Your Tasks in One Place.
           </p>
           <p >
-           Nulla, euismod ...h
+           Nulla, euismod tellus nec tortor ornare from id luctus lorem pharetra.
           </p>
           <button class="Learn-Button">Learn More</button>
         </div>
