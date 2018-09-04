@@ -1,43 +1,49 @@
 <template>
     <div>
-      <EdgeHeader color="teal darken-1"/>
-      <div class="container free-bird">
-        <row>
-          <column md="10" class="mx-auto float-none white z-depth-1 py-2 px-2">
-            <card-body>
-              <h2 class="h2-responsive"><strong>MDB Vue</strong></h2>
-              <p class="pb-4">Vue Bootstrap with Material Design</p>
-            </card-body>
-          </column>
-        </row>
-      </div>
+
+
       <container>
-        <row>
-          <column md="10" class="mx-auto mt-4 text-center">
-            <p class="pt-4">Google has designed a Material Design to make the web more beautiful and more user-friendly.</p>
-            <p>Twitter has created a Bootstrap to support you in faster and easier development of responsive and effective websites.</p>
-            <p>We present you a framework containing the best features of both of them - Material Design for Bootstrap.</p>
-          </column>
-        </row>
-        <hr/>
-      <h3 class="pt-5 text-center">See it in action</h3>
+
+
       <row>
-        <column md="4" class="text-center home-feature-box">
-          <a href="#/css">
-            <fa icon="css3" class="pink-text" />
-            <span>CSS</span>
+        <column md="3" class="text-center home-feature-box">
+          <a href="#">
+
+            <badge pill color="cyan" class="icon-arvan"><fa icon="cloud"  /></badge>
+            <span class="home-feature-text">Cloud Storage</span>
+            <p>
+              Donec tempore finibus ante ac luctus. Fusce facilisis nisi.
+            </p>
           </a>
         </column>
-        <column md="4" class="text-center home-feature-box">
-          <a href="#/components">
-            <fa icon="cubes" class="blue-text" />
-            <span>COMPONENTS</span>
+        <column md="3" class="text-center home-feature-box">
+          <a href="#">
+
+            <badge pill color="green" class="icon-arvan"><fa icon="cog"  /></badge>
+            <span class="home-feature-text">Powerful System</span>
+            <p>
+              Donec tempore finibus ante ac luctus. Fusce facilisis nisi.
+            </p>
           </a>
         </column>
-        <column md="4" class="text-center home-feature-box">
-          <a href="#/advanced">
-            <fa icon="code" class="green-text" />
-            <span>ADVANCED</span>
+        <column md="3" class="text-center home-feature-box">
+          <a href="#">
+
+            <badge pill color="purple" class="icon-arvan"><fa icon="check-circle"  /></badge>
+            <span class="home-feature-text">Heigh Performance</span>
+            <p>
+              Donec tempore finibus ante ac luctus. Fusce facilisis nisi.
+            </p>
+          </a>
+        </column>
+        <column md="3" class="text-center home-feature-box">
+          <a href="#">
+
+            <badge pill color="orange" class="icon-arvan"><fa icon="share-alt"  /></badge>
+            <span class="home-feature-text">Easy Management</span>
+            <p>
+              Donec tempore finibus ante ac luctus. Fusce facilisis nisi.
+            </p>
           </a>
         </column>
       </row>
@@ -50,7 +56,7 @@
 </template>
 
 <script>
-import { Container, Column, Row, Fa, Navbar, NavbarItem, NavbarNav, NavbarCollapse, Btn, EdgeHeader, CardBody } from 'mdbvue';
+import { Badge, Container, Column, Row, Fa, Navbar, NavbarItem, NavbarNav, NavbarCollapse, Btn, EdgeHeader, CardBody } from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -65,7 +71,8 @@ export default {
     NavbarCollapse,
     Btn,
     EdgeHeader,
-    CardBody
+    CardBody,
+    Badge
   }
 };
 </script>
@@ -81,15 +88,12 @@ h1, h2 {
 }
 
 .home-feature-box i {
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
-.home-feature-box span {
-  display: block;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 20px;
+
+.home-feature-box .icon-arvan {
+
 }
 
 ul {
@@ -104,5 +108,19 @@ li {
 a {
   color: #42b983;
 }
+  .icon-arvan{
+    padding: 11px;
+    margin: 11px;
+  }
+  .home-feature-text{
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .home-feature-box p {
+    color: black;
+    margin: 10px;
+  }
 
 </style>
