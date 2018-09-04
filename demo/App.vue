@@ -83,8 +83,14 @@ export default {
     background-color: inherit;
   }
   .header-arvan{
-    background-image: linear-gradient(to bottom right,#c96dd8, #3525af)!important;
-    height: 550px;
+    /*background-image: linear-gradient(to bottom right,#c96dd8, #3525af)!important;*/
+
+    background-image: url("../demo/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
   }
 .header-arvan .navbar{
   -webkit-box-shadow: none;
@@ -121,5 +127,4 @@ export default {
     padding: 12px;
     border: 0;
   }
-
 </style>
