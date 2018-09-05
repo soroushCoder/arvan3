@@ -115,10 +115,49 @@
           </div>
         </column>
         <column md="6">
+          <div class="keep-center-right">
+          <row>
+            <column md="6"><img src="../assets/playstore.jpg" height="60" width="204"/></column>
+            <column md="6"><img src="../assets/appstore.jpg" height="60" width="200"/></column>
+          </row>
+          </div>
         </column>
       </row>
-    </div>
 
+    </div>
+    <container>
+      <row>
+        <column md="10" class="mx-auto mt-4 text-center">
+          <h2 class="pt-4 bolder">
+        Quick Overview
+          </h2>
+          <p>Donec tempore finibus ante ac luctus. Fusce facilisis nisi.vel odio tincid-</p>
+          <p>unt maximus. pellentesque tempus gravida viverra.</p>
+        </column>
+      </row>
+    </container>
+    <container>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Some content.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Some content in menu 1.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Some content in menu 2.</p>
+        </div>
+      </div>
+    </container>
   </div>
 </template>
 
@@ -233,6 +272,10 @@
   .keep-center {
     padding: 10% 20% 10% 30%;
   }
+  .keep-center-right {
+    padding: 10% 30% 10% 10%;
+  }
+
 
   .background-get-app {
     background-image: url("../assets/background2.png");
