@@ -33,11 +33,27 @@
     <main :style="{marginTop: '60px'}">
       <router-view></router-view>
     </main>
-    <Ftr color="default-color">
-      <p class="footer-copyright mb-0 py-3 text-center">
-        &copy; {{new Date().getFullYear()}} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-      </p>
-    </Ftr>
+
+
+    <div class="clearfix"></div>
+    <section class="footer-style-one">
+      <div class="auto-container">
+        <div class="row clearfix">
+
+          <div class="column col-md-6 col-sm-12 col-xs-12">
+            <div class="copyright">Designed by <a href="http://themebunch.com/newwp/ambition/#">GoldeLayers</a> | Powered by WordPress</div>
+          </div>
+          <div class="nav-column col-md-6 col-sm-12 col-xs-12">
+            <ul class="footer-nav">
+              <li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-207 active"><a title="Home" href="http://themebunch.com/newwp/ambition/" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Home</a></li>
+              <li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a title="Blog Grid View" href="http://themebunch.com/newwp/ambition/blog-grid-view/" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Blog Grid View</a></li>
+              <li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a title="Our Blog" href="http://themebunch.com/newwp/ambition/our-blog/" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Our Blog</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -73,6 +89,10 @@ export default {
 	flex-direction: column;
 	min-height:100vh;
 	justify-content: space-between;
+}
+.footer-arvan{
+  background-color: black;
+  color: white;
 }
   .Create-Button{
 
@@ -127,4 +147,49 @@ export default {
     padding: 12px;
     border: 0;
   }
+.footer-style-one .footer-nav li a {
+  position: relative;
+  color: #abaab0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.footer-style-one .footer-nav li {
+  position: relative;
+  margin-left: 28px;
+  display: inline-block;
+}
+.footer-style-one .footer-nav {
+  position: relative;
+}
+.footer-style-one .nav-column {
+  position: relative;
+  text-align: right;
+}
+  .auto-container {
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+.footer-style-one {
+  position: relative;
+  padding: 28px 0px;
+  background-color: #1c232b;
+}
+.footer-style-one .copyright {
+  position: relative;
+  color: #abaab0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-style-one .copyright a {
+  position: relative;
+  color: #ffffff;
+}
 </style>

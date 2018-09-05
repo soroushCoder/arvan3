@@ -1,8 +1,21 @@
-# mdbvue
+# Soroush arvan
 
-> Vue Bootstrap with Material Design
+> Vue Bootstrap with Arvan Design
 
 ## Build Setup
+
+
+``` bash
+# install dependencies
+yarn install
+
+# serve with hot reload at localhost:8080
+yarn demo
+
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
 
 ``` bash
 # install dependencies
